@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Kalam|Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="/img/fav.ico" type="image/x-icon" />
+    <title>World Most Addicted Garfield To-Do App</title>
+  </head>
+
+  <body>
+    <section class="container jumbotron shadow-lg p-5">
+      <div class="row my-3" id="todorow">
+        <small>Created by
+          <a href="http://www.github.com/haichungcn">Hai Chung</a> &
+          <a href="http://www.github.com/GarfDev">Nguyen Gia Tuan</a></small>
+        <h1 class="display-3 text-bold">TO-BE-DONE</h1>
+      </div>
+
+      <div class="row my-3">
+        <div id="priorityDropdown" class=" col-1form-group input-group-prepend">
+          <select id="priorityMenu" class="form-control">
+            <option disabled>Priority...</option>
+            <option selected id="priority1" class="dropdown-item text-success" href="#">1</option>
+            <hr />
+            <option id="priority2" class="dropdown-item text-warning" href="#">2</option>
+            <hr />
+            <option id="priority3" class="dropdown-item text-danger" href="#">3</option>
+          </select>
+        </div>
+        <input id="userInput" type="text" class="form-control col-6 col-sm-4"
+          placeholder="Type in your task and click ->" autofocus />
+        <div class="input-group-append col-1">
+          <button id="addTask" class="btn btn-light rounded-right" onclick="addTask()">
+            +
+          </button>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <button id="showallbutton" type="button" class="btn btn-sm btn-outline-warning active rounded-pill mr-2"
+          onclick="handleChangeMode('all'), activeButton('showallbutton')">
+          All<span id="showallbadge" class="badge badge-light ml-2">0</span>
+        </button>
+        <button id="showundonebutton" type="button" class="btn btn-sm btn-outline-warning rounded-pill mr-2"
+          onclick="handleChangeMode('undone'), activeButton('showundonebutton')">
+          Undone<span id="showundonebadge" class="badge badge-light ml-2">0</span>
+        </button>
+        <button id="showdonebutton" type="button" class="btn btn-sm btn-outline-warning rounded-pill"
+          onclick="handleChangeMode('done'), activeButton('showdonebutton')">
+          Done<span id="showdonebadge" class="badge badge-light ml-2">0</span>
+        </button>
+      </div>
+
+      <div class="row">
+        <p class="text-bold" id="currentStatic"></p>
+      </div>
+
+      <div class="row">
+        <div class="col" id="toDoListCollumn"></div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

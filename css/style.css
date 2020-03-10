@@ -1,0 +1,130 @@
+* {
+    color: #80560c;
+    font-family: "Kalam", cursive;
+    cursor: url("https://i.imgur.com/PP2I38w.png"), auto;
+}
+
+body {
+    background-color: #80560c;
+}
+
+section {
+    margin: 2rem;
+    min-height: 90vh;
+    padding: 2rem;
+    background-image: url("/img/garfield.png");
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    color: #fbfe7d !important;
+}
+
+#addTask {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+    width: 3rem;
+    background-color: #fec0d0;
+    color: white;
+    border: none;
+}
+
+#addTask:hover {
+    background-color: #fbfe7d;
+    color: #fec0d0;
+}
+
+#userInput {
+    color: #80560c;
+}
+
+#userInput :active {
+    outline: none;
+    box-shadow: none !important;
+    border: 0;
+    text-decoration: none;
+}
+
+#todorow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.btn-delete {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
+    padding: 0;
+}
+
+#showallbutton #showundonebutton #showdonebutton {
+    border-color: #fbfe7d;
+}
+
+#showallbutton :hover {
+    background-color: #80560c !important;
+}
+
+.jumbotron {
+    border-radius: 40px;
+}
+
+label {
+    text-align: left;
+    color: #80560c;
+    text-shadow: #80560c;
+}
+
+label :hover {
+    color: #fec0d0;
+    transition-duration: 0.5s;
+}
+
+del {
+    color: #fbfe7d;
+}
+
+#listRenderArea {
+    text-align: left;
+}
+
+#listRenderArea :hover {
+    color: #fec0d0;
+}
+
+#toDoListCollumn {
+    font-size: 1.7rem;
+    transition-duration: 0.5s;
+}
+
+.form-check-input {
+    transform: scale(1.4);
+    margin-top: 0.5rem;
+    transition-duration: 0.5s;
+}
+
+#priorityDropdown #priorityMenu {
+    font-weight: bold;
+    background-color: #fbfe7d;
+    color: #dd9716;
+    border-color: #fec0d0;
+    transition-duration: 0.5s;
+    width: 5.5rem;
+}
+
+#priorityDropdown :active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #80560c;
+}
+
+a :hover {
+    color: #fbfe7d;
+}
